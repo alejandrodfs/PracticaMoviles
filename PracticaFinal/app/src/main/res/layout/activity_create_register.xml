@@ -8,7 +8,7 @@
     android:paddingStart="30dp"
     android:paddingTop="0dp"
     android:paddingEnd="30dp"
-    tools:context=".MainActivity">
+    tools:context=".CreateRegister">
 
 
 
@@ -61,7 +61,8 @@
         android:id="@+id/buttonGuardar"
         android:layout_width="351dp"
         android:layout_height="wrap_content"
-        android:text="Guardar receta" />
+        android:text="Guardar receta"
+        android:onClick="onClickGuardar"/>
 
 
 
