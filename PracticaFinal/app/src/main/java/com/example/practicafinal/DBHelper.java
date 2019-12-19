@@ -80,8 +80,10 @@ public class DBHelper extends SQLiteOpenHelper {
          }
          public static void borrarReceta(SQLiteDatabase db, String idreceta){
 
-            String consulta = "DELETE FROM receta where receta._id =="+idreceta+"";
+            String consulta = "DELETE FROM receta where receta._id == '"+idreceta+"'";
             db.execSQL(consulta);
+
+
          }
     }
 

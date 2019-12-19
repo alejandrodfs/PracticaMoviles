@@ -23,7 +23,7 @@
         android:id="@+id/categoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="categoria"/>
+        android:hint="Categoria"/>
 
     <EditText
         android:id="@+id/tiempo"
@@ -46,14 +46,14 @@
         android:id="@+id/ingredientes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="ingredientes" />
+        android:hint="Ingredientes" />
 
 
     <EditText
         android:id="@+id/descripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="descripcion" />
+        android:hint="Descripcion" />
 
 
 

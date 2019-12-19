@@ -12,61 +12,87 @@
 
 
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
     <TextView
         android:id="@+id/titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Titulo" />
+        android:text="Titulo"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/NombreTitulo"
+        android:id="@+id/Nombretitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NombreTitulo" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
 
 
     <TextView
         android:id="@+id/categoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Categoria"/>
+        android:text="Categoria"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
     <TextView
         android:id="@+id/Nombrecategoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="NombreCategoria"/>
+        android:text="NombreCategoria" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
 
     <TextView
         android:id="@+id/tiempo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tiempo" />
+        android:text="Tiempo"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/Nombretiempo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NombreTiempo" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
 
 
     <TextView
         android:id="@+id/calorias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calorias" />
+        android:text="Calorias"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/Nombrecalorias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NombreCalorias" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
 
 
     <TextView
         android:id="@+id/ingredientes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ingredientes" />
+        android:text="Ingredientes"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
 
 
     <TextView
@@ -74,12 +100,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NombreIngredientes" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
 
     <TextView
         android:id="@+id/descripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Descripcion" />
+        android:text="Descripcion"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
 
 
     <TextView
@@ -87,6 +118,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NombreDescripcion" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
 
 
 
@@ -94,7 +128,7 @@
         android:id="@+id/buttonEditar"
         android:layout_width="351dp"
         android:layout_height="wrap_content"
-        android:text="Editar" />
+        android:text="Editar"/>
 
 
     <Button

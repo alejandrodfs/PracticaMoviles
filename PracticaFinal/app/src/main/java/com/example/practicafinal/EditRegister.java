@@ -56,13 +56,5 @@ public class EditRegister extends AppCompatActivity {
 
     }
 
-    public void clickBotonBorrar (View v){
 
-        DBHelper dbHelper = new DBHelper(this);
-        db = dbHelper.getWritableDatabase();
-        DBHelper.borrarReceta(db, idreceta);
-        Intent intent = new Intent(EditRegister.this, MainActivity.class);
-        startActivity(intent);
-
-    }
 }

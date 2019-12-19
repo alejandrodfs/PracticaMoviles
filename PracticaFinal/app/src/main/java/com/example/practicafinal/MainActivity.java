@@ -31,9 +31,8 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<Receta> adapter;
 
         final ListView milista = findViewById(R.id.milista);
-        //String[] values = new String[]{"Ironman","Capitan America","Hulk","Thor","Black Widow","Ant man","Spider man","Capitan America","Hulk","Thor","Black Widow","Ant man","Spider man"};
-        //va a haber que crear un adaptador para poder mostrar la lista bien
-        adapter = new ArrayAdapter<Receta>(this, android.R.layout.simple_list_item_1,recetas);
+
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,recetas);
         milista.setAdapter(adapter);
 
 
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 String titulo = itemval.getTitulo();
 
                 Toast.makeText(getApplicationContext(), "Position: "+ item+" – Valor: "+titulo, Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(MainActivity.this, EditRegister.class);
+                Intent intent = new Intent(MainActivity.this, ShowRegister.class);
                 Bundle b = new Bundle();
                 //pasamos el id para asi hacer una consulta en la base de datos y sacar todos los campos
                 b.putString("RecetaID", itemval.getId());
@@ -62,5 +61,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, CreateRegister.class);
         startActivity(intent);
     }
+
 
 }
