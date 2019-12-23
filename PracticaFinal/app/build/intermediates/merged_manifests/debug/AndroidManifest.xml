@@ -21,7 +21,9 @@
         <activity android:name="com.example.practicafinal.EditRegister" />
         <activity android:name="com.example.practicafinal.ShowRegister" />
         <activity android:name="com.example.practicafinal.CreateRegister" />
-        <activity android:name="com.example.practicafinal.MainActivity" >
+        <activity
+            android:name="com.example.practicafinal.MainActivity"
+            android:theme="@style/AppTheme.Launcher" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

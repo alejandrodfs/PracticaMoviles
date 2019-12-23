@@ -18,7 +18,7 @@
         android:id="@+id/buttonCreate"
         android:layout_width="351dp"
         android:layout_height="wrap_content"
-        android:text="Crear"
+        android:text="Nueva receta"
         android:onClick="clickBotonCrear"/>
 
     <ListView

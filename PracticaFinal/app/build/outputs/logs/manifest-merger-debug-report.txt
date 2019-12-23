@@ -84,6 +84,8 @@ ADDED from /Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles
 		ADDED from /Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:14:19-49
 activity#com.example.practicafinal.MainActivity
 ADDED from /Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:15:9-21:20
+	android:theme
+		ADDED from /Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:15:48-88
 	android:name
 		ADDED from /Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:15:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
