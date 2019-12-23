@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -16,9 +18,16 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button buttonSearch;
+    private EditText editTextBusqueda;
+    private SQLiteDatabase db = null;
+    private SQLiteDatabase db2 = null;
+    private String busqueda ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        final DBHelper dbHelper = new DBHelper(this);
+
 
         setTheme(R.style.AppTheme);
         try{
@@ -31,10 +40,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         DBHelper receta = new DBHelper(this);
         SQLiteDatabase db = receta.getWritableDatabase();
+        //Pasamos el parametro busqueda, si este es nulo devuelve todas las recetas sino hace la busqueda
         List<Receta> recetas = DBHelper.getRecetas(db);
+
+
         ArrayAdapter<Receta> adapter;
 
         final ListView milista = findViewById(R.id.milista);
@@ -61,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+
     }
 
     public void clickBotonCrear( View v ){
@@ -68,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, CreateRegister.class);
         startActivity(intent);
     }
+
+
 
 
 }

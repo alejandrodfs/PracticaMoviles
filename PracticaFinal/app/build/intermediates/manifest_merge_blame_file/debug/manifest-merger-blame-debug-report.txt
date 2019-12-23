@@ -6,52 +6,52 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
-8-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml
+8-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml
+9-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:5:5-22:19
+11-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:5:5-22:19
 12        android:allowBackup="true"
-12-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:6:9-35
+12-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.0.1] /Users/fernandozamora/.gradle/caches/transforms-2/files-2.1/72b2b92ec4ab73ff21fb9bc348de3b22/core-1.0.1/AndroidManifest.xml:22:18-86
+13-->[androidx.core:core:1.0.1] /Users/alejandrosanzperez/.gradle/caches/transforms-2/files-2.1/72b2b92ec4ab73ff21fb9bc348de3b22/core-1.0.1/AndroidManifest.xml:22:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
-15-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:7:9-43
+15-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:7:9-43
 16        android:label="@string/app_name"
-16-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:8:9-41
+16-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:8:9-41
 17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:9:9-54
+17-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
-18-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:10:9-35
+18-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:10:9-35
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
-20-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:11:9-40
+20-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:11:9-40
 21        <activity android:name="com.example.practicafinal.EditRegister" />
-21-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:12:9-59
-21-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:12:19-47
+21-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:12:9-59
+21-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:12:19-47
 22        <activity android:name="com.example.practicafinal.ShowRegister" />
-22-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:13:9-50
-22-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:13:19-47
+22-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:13:9-50
+22-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:13:19-47
 23        <activity android:name="com.example.practicafinal.CreateRegister" />
-23-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:14:9-52
-23-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:14:19-49
+23-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:14:9-52
+23-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:14:19-49
 24        <activity
-24-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:15:9-21:20
+24-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:15:9-21:20
 25            android:name="com.example.practicafinal.MainActivity"
-25-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:15:19-47
+25-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:15:19-47
 26            android:theme="@style/AppTheme.Launcher" >
-26-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:15:48-88
+26-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:15:48-88
 27            <intent-filter>
-27-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:16:13-20:29
+27-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:16:13-20:29
 28                <action android:name="android.intent.action.MAIN" />
-28-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:17:17-69
-28-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:17:25-66
+28-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:17:17-69
+28-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:17:25-66
 29
 30                <category android:name="android.intent.category.LAUNCHER" />
-30-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:19:17-77
-30-->/Users/fernandozamora/Documents/AndroidStudioProjects/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:19:27-74
+30-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:19:17-77
+30-->/Users/alejandrosanzperez/Documents/GitHub/PracticaMoviles/PracticaFinal/app/src/main/AndroidManifest.xml:19:27-74
 31            </intent-filter>
 32        </activity>
 33    </application>

@@ -14,6 +14,19 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="40dp"></Space>
+
+    <EditText
+        android:id="@+id/Busqueda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduzca la busqueda" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:text="Buscar" />
+
     <Button
         android:id="@+id/buttonCreate"
         android:layout_width="351dp"

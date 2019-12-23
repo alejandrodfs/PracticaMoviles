@@ -40,8 +40,6 @@
 
 
 
-
-
     <EditText
         android:id="@+id/ingredientes"
         android:layout_width="match_parent"

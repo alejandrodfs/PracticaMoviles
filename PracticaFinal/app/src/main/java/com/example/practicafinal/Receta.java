@@ -64,4 +64,9 @@ public class Receta {
         return tiempo;
     }
 
+    @Override
+    public String toString (){
+        return getTitulo();
+    }
+
 }
