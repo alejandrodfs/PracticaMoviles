@@ -85,18 +85,6 @@ public class DBHelper extends SQLiteOpenHelper {
 
 
          }
-         public static  ArrayList< Receta> BuscarReceta( SQLiteDatabase db, String busqueda) {
-             ArrayList<Receta> recetas = new ArrayList<Receta>();
-             String consulta = "SELECT * FROM receta r WHERE r.titulo == '" + busqueda + "'";
-             Cursor pos = db.rawQuery(consulta, null);
-
-             while (pos.moveToNext()) {
-                 recetas.add(new Receta(pos.getString(0), pos.getString(1), pos.getString(2), pos.getString(3), pos.getString(4), pos.getString(5), pos.getString(6)));
-             }
-
-             return recetas;
-         }
-
 
 
 
