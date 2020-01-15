@@ -129,7 +129,7 @@ public class CreateRegisterFragment extends Fragment implements View.OnClickList
 
             progressBar.setVisibility(View.GONE);
 
-            Toast.makeText(CreateRegisterFragment.this.getActivity(), "Receta creada correcetamente", Toast.LENGTH_LONG).show();
+            Toast.makeText(CreateRegisterFragment.this.getActivity(), "Receta creada correctamente", Toast.LENGTH_LONG).show();
 
         }
     }

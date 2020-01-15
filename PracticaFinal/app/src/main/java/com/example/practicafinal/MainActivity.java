@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 Receta itemval = (Receta)milista.getItemAtPosition(position);
                 String titulo = itemval.getTitulo();
 
-                Toast.makeText(getApplicationContext(), "Position: "+ item+" – Valor: "+titulo, Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Has seleccionado la receta: "+titulo, Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(MainActivity.this, ShowRegister.class);
                 Bundle b = new Bundle();
                 //pasamos el id para asi hacer una consulta en la base de datos y sacar todos los campos

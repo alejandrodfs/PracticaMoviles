@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ShowRegister extends AppCompatActivity {
 
@@ -73,6 +74,7 @@ public class ShowRegister extends AppCompatActivity {
 
                 db = dbHelper.getWritableDatabase();
                 DBHelper.borrarReceta(db, receta.getId());
+                Toast.makeText(getApplicationContext(), "Has eliminado la receta correctamente", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(ShowRegister.this, MainActivity.class);
                 startActivity(intent);
 
