@@ -109,7 +109,7 @@ public class CreateRegisterFragment extends Fragment implements View.OnClickList
         @Override
         protected String doInBackground(String... params) {
             try {
-                Thread.sleep(10000);
+
                 DBHelper recetaDB = new DBHelper(getActivity().getApplicationContext());
                 SQLiteDatabase db = recetaDB.getWritableDatabase();
                 Receta receta = new Receta(params[0], params[1], params[2], params[3], params[4], params[5]);

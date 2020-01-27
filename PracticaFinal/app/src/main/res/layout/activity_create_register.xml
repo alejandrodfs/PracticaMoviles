@@ -61,8 +61,7 @@
         android:id="@+id/buttonGuardar"
         android:layout_width="351dp"
         android:layout_height="wrap_content"
-        android:text="Guardar receta"
-        android:onClick="onClickGuardar"/>
+        android:text="Guardar receta" />
 
     <ProgressBar
         android:id="@+id/progressBar"

@@ -36,9 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.listReceta:
-                startActivity(new Intent(this, MainActivity.class));
-                return true;
+
             case R.id.createReceta:
                 startActivity(new Intent(this, CreateRegister.class));
                 return true;
@@ -66,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         List<Receta> recetas = DBHelper.getRecetas(db);
 
         if(!recetas.isEmpty()){
-            super.onCreate(savedInstanceState);
+
             setContentView(R.layout.activity_receta_list);
 
 
@@ -100,6 +98,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    }
-
 }
+
+
