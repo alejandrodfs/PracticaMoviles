@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +23,8 @@ public class EditRegister extends AppCompatActivity {
     private EditText editTextCalorias;
     private EditText editTextIngredientes;
     private EditText editTextDescripcion;
+
+
 
     private Button buttonGuardarCambios;
 
@@ -57,10 +60,14 @@ public class EditRegister extends AppCompatActivity {
         editTextIngredientes.setText(receta.getIngredientes());
         editTextDescripcion.setText(receta.getDescripcion());
 
+
+
         buttonGuardarCambios = findViewById(R.id.buttonGuardarCambios);
         buttonGuardarCambios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
 
                 //Recogemos los valores de titulo e ingredientes para comprobar que al menos no sean vacios estos campos de la receta
                 String titulo = editTextTitulo.getText().toString();
@@ -75,6 +82,7 @@ public class EditRegister extends AppCompatActivity {
                     DBHelper.borrarReceta(db, idreceta);
 
                     DBHelper.crearReceta(db, receta);
+
 
                     Toast.makeText(getApplicationContext(), "Receta actualizada con exito", Toast.LENGTH_LONG).show();
 

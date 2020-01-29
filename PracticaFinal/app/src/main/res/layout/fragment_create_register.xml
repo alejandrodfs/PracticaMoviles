@@ -4,12 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-
+    android:gravity="center"
     android:orientation="vertical"
     android:paddingStart="30dp"
     android:paddingTop="0dp"
     android:paddingEnd="30dp"
     tools:context=".CreateRegisterFragment">
+
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
 
 
 
@@ -18,6 +23,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Titulo" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
 
 
     <EditText
@@ -26,11 +34,19 @@
         android:layout_height="wrap_content"
         android:hint="Categoria"/>
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
     <EditText
         android:id="@+id/tiempo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Tiempo" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
 
 
     <EditText
@@ -39,8 +55,9 @@
         android:layout_height="wrap_content"
         android:hint="Calorias" />
 
-
-
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
 
 
     <EditText
@@ -49,35 +66,41 @@
         android:layout_height="wrap_content"
         android:hint="Ingredientes" />
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
 
     <EditText
         android:id="@+id/descripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Descripcion" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
 
 
 
     <Button
         android:id="@+id/buttonGuardar"
-        android:layout_width="351dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
         android:text="Guardar receta"
         />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="20dp"
-        android:visibility="gone">
-
-    </ProgressBar>
-
-
 
 
 </LinearLayout>

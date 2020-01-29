@@ -9,6 +9,7 @@ import android.os.Bundle;
 
 
 import android.app.Fragment;
+import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -29,6 +30,8 @@ public class CreateRegisterFragment extends Fragment implements View.OnClickList
     private EditText calorias;
     private EditText ingredientes;
     private ProgressBar progressBar;
+    private int progressStatus = 0;
+    private Handler hdlr = new Handler();
     Button buttonGuardar;
 
 
@@ -51,7 +54,9 @@ public class CreateRegisterFragment extends Fragment implements View.OnClickList
         buttonGuardar = (Button) view.findViewById(R.id.buttonGuardar);
         buttonGuardar.setOnClickListener(this);
 
-        progressBar =(ProgressBar)view. findViewById(R.id.progressBar);
+        progressBar = (ProgressBar) view.findViewById(R.id.progressBar);
+
+
         return view;
 
     }
@@ -91,8 +96,9 @@ public class CreateRegisterFragment extends Fragment implements View.OnClickList
 
 
 
-            progressBar.setVisibility(View.VISIBLE);
 
+
+            progressBar.setVisibility(View.VISIBLE);
             new PostTask().execute(stringtitulo, stringcategoria, stringtiempo, stringcalorias, stringingredientes, stringdescripcion);
 
             Intent intent = new Intent(CreateRegisterFragment.this.getActivity(), MainActivity.class);
@@ -126,13 +132,38 @@ public class CreateRegisterFragment extends Fragment implements View.OnClickList
         @Override
         protected void onPostExecute(String result) {
 
+            super.onPostExecute(result);
 
-            progressBar.setVisibility(View.GONE);
 
-            Toast.makeText(CreateRegisterFragment.this.getActivity(), "Receta creada correctamente", Toast.LENGTH_LONG).show();
+
+
+            progressStatus = progressBar.getProgress();
+            progressBar.setProgress(20);
+
+
+
+                    while (progressStatus < 100) {
+                        progressStatus += 1;
+                        // Update the progress bar and display the current value in text view
+
+                        progressBar.setProgress(progressStatus);
+
+                        try {
+                            // Sleep for 100 milliseconds to show the progress slowly.
+                            Thread.sleep(10);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+                    //Toast.makeText(CreateRegisterFragment.this.getActivity(), "Receta creada correctamente", Toast.LENGTH_LONG).show();
+                }
+
+
+
 
         }
-    }
+
 
 
 

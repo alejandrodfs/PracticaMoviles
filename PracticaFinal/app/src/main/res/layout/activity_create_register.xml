@@ -17,6 +17,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Titulo" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
 
 
     <EditText
@@ -25,11 +28,19 @@
         android:layout_height="wrap_content"
         android:hint="Categoria"/>
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
+
     <EditText
         android:id="@+id/tiempo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Tiempo" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
 
 
     <EditText
@@ -37,6 +48,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Calorias" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
 
 
 
@@ -48,12 +63,19 @@
         android:layout_height="wrap_content"
         android:hint="Ingredientes" />
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
+
 
     <EditText
         android:id="@+id/descripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Descripcion" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
 
 
 
@@ -63,16 +85,16 @@
         android:layout_height="wrap_content"
         android:text="Guardar receta" />
 
+
     <ProgressBar
         android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:visibility="gone">
+        android:layout_width="323dp"
+        android:layout_height="210dp"
+        android:startColor="#80ffd300" />
 
-    </ProgressBar>
+
+
+
 
 
 </LinearLayout>

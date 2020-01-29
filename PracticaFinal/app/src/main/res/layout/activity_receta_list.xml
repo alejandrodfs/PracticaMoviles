@@ -10,10 +10,23 @@
     android:paddingEnd="30dp"
     tools:context=".MainActivity">
 
-
     <Space
         android:layout_width="match_parent"
-        android:layout_height="40dp"></Space>
+        android:layout_height="30dp"></Space>
+
+
+    <TextView
+        android:id="@+id/tusRecetas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Tus recetas"
+        android:textColor="#030303"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"></Space>
 
 
     <ListView
