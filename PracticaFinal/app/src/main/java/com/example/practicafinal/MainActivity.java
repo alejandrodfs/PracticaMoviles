@@ -42,9 +42,11 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         MenuItem searchItem = menu.findItem(R.id.search);
 
         SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
-        searchView.clearFocus();
 
         searchView.setOnQueryTextListener(this);
+
+       
+
 
 
         return true;
@@ -117,10 +119,12 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     @Override
     public boolean onQueryTextSubmit(String query) {
 
+        System.out.println("Entra");
 
         List<Receta> recetasBusqueda = new ArrayList<Receta>();
 
         if(!recetas.isEmpty()) {
+            System.out.println("1");
 
 
             for (int i = 0; i < recetas.size(); i++) {
@@ -131,17 +135,25 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 }
             }
 
+
             if (!recetasBusqueda.isEmpty()) {
+                System.out.println("2");
 
                 adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, recetasBusqueda);
                 milista.setAdapter(adapter);
 
             } else {
+                System.out.println("3");
                 adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, recetas);
                 milista.setAdapter(adapter);
                 Toast.makeText(getApplicationContext(), "Sin resultados", Toast.LENGTH_LONG).show();
             }
 
+
+
+        }else{
+            System.out.println("4");
+            Toast.makeText(getApplicationContext(), "No hay recetas", Toast.LENGTH_LONG).show();
         }
 
 
@@ -150,6 +162,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
     @Override
     public boolean onQueryTextChange(String newText) {
+
+
         return false;
     }
 }
