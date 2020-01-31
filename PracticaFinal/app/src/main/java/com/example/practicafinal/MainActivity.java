@@ -2,6 +2,7 @@ package com.example.practicafinal;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.MenuItemCompat;
 
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -15,12 +16,14 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener{
 
     private Button buttonSearch;
     private EditText editTextBusqueda;
@@ -28,9 +31,22 @@ public class MainActivity extends AppCompatActivity {
     private SQLiteDatabase db2 = null;
     private String busqueda ;
 
+    ListView milista;
+    List<Receta> recetas;
+    ArrayAdapter<Receta> adapter;
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
+
+        MenuItem searchItem = menu.findItem(R.id.search);
+
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        searchView.clearFocus();
+
+        searchView.setOnQueryTextListener(this);
+
+
         return true;
     }
 
@@ -61,16 +77,16 @@ public class MainActivity extends AppCompatActivity {
         DBHelper receta = new DBHelper(this);
         SQLiteDatabase db = receta.getWritableDatabase();
         //Pasamos el parametro busqueda, si este es nulo devuelve todas las recetas sino hace la busqueda
-        List<Receta> recetas = DBHelper.getRecetas(db);
+        recetas = DBHelper.getRecetas(db);
 
         if(!recetas.isEmpty()){
 
             setContentView(R.layout.activity_receta_list);
 
 
-            ArrayAdapter<Receta> adapter;
 
-            final ListView milista = findViewById(R.id.milista);
+
+            milista = findViewById(R.id.milista);
 
             adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,recetas);
             milista.setAdapter(adapter);
@@ -98,6 +114,44 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+
+
+        List<Receta> recetasBusqueda = new ArrayList<Receta>();
+
+        if(!recetas.isEmpty()) {
+
+
+            for (int i = 0; i < recetas.size(); i++) {
+
+                if (query.equals(recetas.get(i).getTitulo())) {
+                    recetasBusqueda.add(recetas.get(i));
+
+                }
+            }
+
+            if (!recetasBusqueda.isEmpty()) {
+
+                adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, recetasBusqueda);
+                milista.setAdapter(adapter);
+
+            } else {
+                adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, recetas);
+                milista.setAdapter(adapter);
+                Toast.makeText(getApplicationContext(), "Sin resultados", Toast.LENGTH_LONG).show();
+            }
+
+        }
+
+
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        return false;
+    }
 }
 
 
